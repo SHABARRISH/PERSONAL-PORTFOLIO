@@ -1,77 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.main{
-    width:100%;
-    background: url(bgimg.jpg) ;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    font-family: sans-serif;
-
+body {
+    background-color: #f9f9f9; /* Set a background color to match your design */
 }
 
-.navbar{
+.main {
+    width: 100%;
+    background: url(bgimg.jpg) no-repeat center center; /* Added no-repeat */
+    background-size: cover; /* Ensures the image covers the whole section */
+    min-height: 100vh; /* Ensures the main section covers at least the viewport height */
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar {
     width: 85%;
     display: flex;
     margin: auto;
     padding: 15px 0;
     align-items: center;
     justify-content: space-between;
-
 }
 
-ul{
+ul {
     margin-top: 2%;
-
 }
-ul li{
+
+ul li {
     list-style: none;
     display: inline-block;
     padding: 10px 15px;
 }
-ul li a{
+
+ul li a {
     font-size: 15px;
     font-weight: bold;
-    text-decoration:none;
+    text-decoration: none;
     color: darkslategray;
-    margin-top: -3%;
     transition: .4s ease;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: darkorange;
 }
-.info{
+
+.info {
     margin-left: 7%;
     margin-top: 6%;
 }
 
-.info h2{
+.info h2 {
     font-size: 50px;
     color: peru;
     margin-bottom: 2%;
 }
-.info h4{
+
+.info h4 {
     font-size: 30px;
-    color:wheat;
+    color: wheat;
 }
-.info p{
+
+.info p {
     font-size: 15px;
     color: darkgoldenrod;
     margin-top: 2%;
 }
-.image{
+
+.image {
     width: 30%;
     height: 70%;
     position: absolute;
     right: 100px;
-    bottom:0;
-
+    bottom: 0;
 }
-.image img{
+
+.image img {
     position: absolute;
     height: 130%;
     left: 30%;
@@ -79,14 +85,17 @@ ul li a:hover{
     bottom: 0;
     transition: left 3s ease;
 }
-.image:hover .me{
+
+.image:hover .me {
     left: 45%;
 }
-.icons a{
+
+.icons a {
     text-decoration: none;
     color: black;
 }
-.icons ion-icon{
+
+.icons ion-icon {
     margin-left: 7%;
     color: black;
     margin-right: -55px;
@@ -94,6 +103,140 @@ ul li a:hover{
     font-size: 35px;
     transition: .4s ease-in-out;
 }
-.icons ion-icon:hover{
+
+.icons ion-icon:hover {
     color: orange;
+}
+
+.about-section,
+.internship-experience {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.about-section h2,
+.internship-experience h2 {
+    font-size: 40px;
+    color: peru;
+}
+
+.intern-details {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.intern-column {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 40%;
+}
+
+.intern-column h3 {
+    font-size: 24px;
+    color: darkorange;
+}
+
+.intern-column p {
+    font-size: 16px;
+    color: darkslategray;
+}
+
+/* Skills section */
+.skills-section {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.skills-section h2 {
+    font-size: 40px;
+    color: peru;
+}
+
+.skills-list {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    font-size: 18px;
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+/* Projects section */
+.projects-section {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.projects-section h2 {
+    font-size: 40px;
+    color: peru;
+    margin-bottom: 20px;
+}
+
+.project-box {
+    width: 40%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-box h3 {
+    font-size: 24px;
+    color: darkorange;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    font-size: 16px;
+    color: darkslategray;
+}
+
+/* Hover effect for project boxes */
+.project-box:hover {
+    transform: scale(1.05);
+}
+.contact-section {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    color: peru;
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-box h3 {
+    font-size: 24px;
+    color: darkorange;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.contact-box a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    color: darkorange;
 }
